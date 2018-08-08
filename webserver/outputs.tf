@@ -1,3 +1,3 @@
-output "elb_dns_name" {
+output "endpoint" {
   value = "${aws_elb.webserver.dns_name}"
 }

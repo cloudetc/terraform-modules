@@ -12,10 +12,18 @@ variable "webserver_subnets" {
   default = ["10.0.3.0/24", "10.0.4.0/24"]
 }
 
-variable "profile" {}
+variable "profile" {
+  description = "The profile with credentials of the AWS account to deploy to"
+}
 
-variable "region" {}
+variable "region" {
+  description = "The region to deploy to"
+}
 
-variable "name" {}
+variable "name" {
+  description = "Name of the application"
+}
 
-variable "environment" {}
+variable "environment" {
+  description = "Environment name to deploy to (qa, prod, etc.)"
+}
